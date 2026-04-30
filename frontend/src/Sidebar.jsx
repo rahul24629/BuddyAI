@@ -21,7 +21,7 @@ function Sidebar({ isLight }) {
   const getAllThreads = async () => {
     try {
       const token = await getToken(); // ✅ যোগ হলো
-      const response = await fetch("http://localhost:8080/api/thread", {
+      const response = await fetch("https://buddyai-4.onrender.com/api/thread", {
         headers: { Authorization: `Bearer ${token}` }, // ✅ যোগ হলো
       });
       const res = await response.json();
@@ -52,7 +52,7 @@ function Sidebar({ isLight }) {
     try {
       const token = await getToken(); // ✅ যোগ হলো
       const response = await fetch(
-        `http://localhost:8080/api/thread/${newThreadId}`,
+        `https://buddyai-4.onrender.com/api/thread/${newThreadId}`,
         {
           headers: { Authorization: `Bearer ${token}` }, // ✅ যোগ হলো
         }
@@ -71,7 +71,7 @@ function Sidebar({ isLight }) {
     try {
       const token = await getToken(); // ✅ যোগ হলো
       const response = await fetch(
-        `http://localhost:8080/api/thread/${threadId}`,
+        `https://buddyai-4.onrender.com/api/thread/${threadId}`,
         {
           method: "DELETE",
           headers: { Authorization: `Bearer ${token}` }, // ✅ যোগ হলো

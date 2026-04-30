@@ -46,7 +46,7 @@ function ChatWindow({ isLight, setIsLight }) {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/api/chat",
+        "https://buddyai-4.onrender.com/api/chat",
         options
       );
       const res = await response.json();
