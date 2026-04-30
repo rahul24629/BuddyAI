@@ -1,0 +1,248 @@
+.chatWindow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 95vmax;
+}
+
+/* body{
+    background-color: #212121;
+} */
+
+body.dark{
+    background-color: black;
+    color: white;
+}
+
+body.light{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+.navbar{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar span{
+    margin: 1rem 2rem;
+}
+
+.userIconDiv{
+    margin: 1rem 2rem;
+}
+
+.userIcon{
+    background-color: #339cff;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.bright{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.chatInput{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.inputBox {
+    caret-color: white;
+  position: fixed !important;
+  bottom: 50px;       /* niche stick */
+  left: 55%;
+  transform: translateX(-50%);
+  
+  width: 100%;
+  max-width: 700px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inputBoxLight{
+    position: fixed !important;
+  bottom: 50px;       /* niche stick */
+  left: 55%;
+  transform: translateX(-50%);
+  
+  width: 100%;
+  max-width: 700px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.inputBoxLight input{
+    border:0.1px solid black;
+    box-shadow: 0 0 30px rgba(0,0,0,2);
+}
+
+.inputBox input{
+    color: white;
+    width:700px;
+    border: none;
+    background-color: rgba(255,255,255,0.05);
+    padding: 20px;
+    font-size: 0.8rem;
+    transition: 0.3s ease;
+    border-radius: 14px;
+    box-shadow: rgba(255,255,255,0.05) 0 54px 55px,
+                rgba(255,255,255,0.05) 0 -12px 30px,
+                rgba(255,255,255,0.05) 0 4px 6px,
+                rgba(255,255,255,0.05) 0 12px 3px,
+                rgba(255,255,255,0.05) 0 -3px 5px;
+}
+
+.inputBoxLight input{
+    color: black;
+    width:700px;
+    border: none;
+    background-color: rgba(255,255,255,0.05);
+    padding: 20px;
+    font-size: 0.8rem;
+    transition: 0.3s ease;
+    border-radius: 14px;
+    /* box-shadow: rgba(255,255,255,0.05) 0 54px 55px,
+                rgba(255,255,255,0.05) 0 -12px 30px,
+                rgba(255,255,255,0.05) 0 4px 6px,
+                rgba(255,255,255,0.05) 0 12px 3px,
+                rgba(255,255,255,0.05) 0 -3px 5px; */
+
+}
+
+input:hover {
+    transform: scale(1.05); /* ektu boro hobe */
+}
+
+input:focus{
+    outline: none;
+}
+
+#submit{
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#submit i:hover{
+    color:rgba(15, 19, 221, 0.703);
+}
+.info{
+    font: size 0.8rem ;
+    padding-left: 16rem;
+    bottom: 1px;  
+    position: fixed;
+    color:#b4b4b4;
+}
+
+.dropDown{
+    position: fixed;
+    top:4rem;
+    right: 4rem;
+    width: 100px;
+    background-color: #323232;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    text-align: left;
+    z-index: 1000;
+    box-shadow: 0 0 30px rgba(0,0,0,2);
+
+}
+
+.dropDownItem{
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin: 0.3rem 0rem;
+    padding: 0.5rem 0.2rem;
+}
+
+.dropDownItem i{
+    font-size:0.8rem;
+}
+
+.dropDownItem:hover{
+    background-color: rgba(180,180,180,0.1);
+    border-radius: 6px;
+}
+
+.dropDownWhite{
+    position: fixed;
+    top:4rem;
+    right: 4rem;
+    width: 100px;
+    background-color: #fbf8fb;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    text-align: left;
+    z-index: 1000;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+
+}
+
+.loader{
+    position: fixed;
+    bottom: 120px; 
+    left: 55%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.notLogged {
+    font-size: 40px;
+  position: fixed;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,3);
+  z-index: 1000;
+  text-align: center;
+}
+.notLoggedLight {
+    font-size: 40px;
+  position: fixed;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(255,255,255,3);
+  z-index: 1000;
+  text-align: center;
+}
+
+
+
+
+
