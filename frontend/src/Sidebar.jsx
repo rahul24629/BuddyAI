@@ -4,6 +4,8 @@ import { MyContext } from "./MyContext";
 import { v1 as uuidv1 } from "uuid";
 import { useAuth } from "@clerk/react"; // ✅ যোগ হলো
 
+import logo from "./assets/Colorful_Modern_3D_Robot_Technology_Logo__2_-removebg-preview.png";
+
 function Sidebar({ isLight }) {
   const {
     allThreads,
@@ -96,7 +98,7 @@ function Sidebar({ isLight }) {
         <button onClick={createNewChat}>
           <div className="col-2 logoBrand">
             <img
-              src="src\assets\Colorful_Modern_3D_Robot_Technology_Logo__2_-removebg-preview.png"
+              src={logo}
               alt="BuddyAI logo"
               className="logo"
             />
